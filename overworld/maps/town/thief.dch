@@ -10,7 +10,7 @@
 },
 &"default_portrait": "Default",
 &"description": "",
-&"display_name": "THIEF",
+&"display_name": "盗賊",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),

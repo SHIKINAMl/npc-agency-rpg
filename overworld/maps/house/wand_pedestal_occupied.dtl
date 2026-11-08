@@ -1,5 +1,5 @@
-A wand rests on the pedestal.
-- Remove wand
+台座に杖が置かれている。
+- 杖を取る
 	[signal arg="empty"]
-- Do nothing
+- 何もしない
 [end_timeline]

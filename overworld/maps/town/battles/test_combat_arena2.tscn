@@ -45,7 +45,7 @@ battler_anim_scene = ExtResource("5_2jmm4")
 ai_scene = ExtResource("9_rktw6")
 metadata/_edit_group_ = true
 
-[node name="Baloo" type="Node2D" parent="Battlers" index="2"]
+[node name="バルー" type="Node2D" parent="Battlers" index="2"]
 position = Vector2(1370, 738)
 script = ExtResource("6_q0bkx")
 stats = ExtResource("5_dbmw8")
@@ -54,7 +54,7 @@ battler_anim_scene = ExtResource("9_jq0mb")
 is_player = true
 metadata/_edit_group_ = true
 
-[node name="Nutsy" type="Node2D" parent="Battlers" index="3"]
+[node name="ナッツィー" type="Node2D" parent="Battlers" index="3"]
 position = Vector2(1243, 906)
 script = ExtResource("6_q0bkx")
 stats = ExtResource("5_ejdro")

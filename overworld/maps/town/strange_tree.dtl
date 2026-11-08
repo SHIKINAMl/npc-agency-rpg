@@ -1,7 +1,7 @@
 if {StrangeTreeExamined} > 0:
-	Wait, what if I went *around* the tree!?
+	待てよ、この木を[i]回りこんで[/i]みたらどうだろう！？
 	[signal arg="ClearPath"]
 else:
-	It's too bad this tree is in the way...
+	この木がじゃまで通れないなあ……
 	set {StrangeTreeExamined} = 1
 [end_timeline]

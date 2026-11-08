@@ -1,9 +1,9 @@
 if {Hint} == 0:
-	runner (Default): Does your mom tell you to stop and look carefully at things?
-	runner (Default): *My* mom always tells me I never notice anything unless I look twice!
+	runner (Default): きみのママも「立ち止まって、よーく見なさい」って言う？
+	runner (Default): [i]ぼくの[/i]ママなんて「あなたは二度見しないと何にも気づかないんだから」っていつも言うんだ！
 	set {Hint} = 1
 else:
-	runner: What did that crazy lady say again?
-	runner: "Green, blue, red?"
+	runner: あのヘンなおばあさん、なんて言ってたっけ？
+	runner: 「緑、青、赤」だったかな？
 	set {Hint} = 0
 [end_timeline]

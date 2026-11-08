@@ -30,6 +30,7 @@ Music="*res://src/common/music/music_player.tscn"
 Player="*res://src/common/player.gd"
 Transition="*res://src/common/screen_transitions/ScreenTransition.tscn"
 Dialogic="*uid://ds2q0uclmolvu"
+JapaneseFont="*res://src/common/japanese_font.gd"
 
 [dialogic]
 
@@ -93,6 +94,8 @@ directories/dtl_directory={
 "encounter_on_victory": "res://overworld/maps/town/encounter_on_victory.dtl",
 "fan_of_four": "res://overworld/maps/town/fan_of_four.dtl",
 "ghost": "res://overworld/maps/forest/ghost.dtl",
+"ghost_loss": "res://overworld/maps/forest/ghost_loss.dtl",
+"ghost_victory": "res://overworld/maps/forest/ghost_victory.dtl",
 "monk": "res://overworld/maps/town/monk.dtl",
 "opening_cutscene": "res://overworld/maps/opening_cutscene.dtl",
 "runner": "res://overworld/maps/town/runner.dtl",

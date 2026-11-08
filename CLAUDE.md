@@ -26,5 +26,15 @@ GDQuest の Godot Open RPG（MIT, upstream: https://github.com/gdquest-demos/god
 - 主な autoload：Camera, CombatEvents, FieldEvents, Gameboard, GamepieceRegistry, Music, Player, Transition, Dialogic。
 - アセット：Kenney Tiny Town（CREDITS.md 参照）。
 
+## これまでの改造（上流からの差分）
+- 日本語化：台詞（.dtl）・キャラ表示名（.dch）・戦闘アクション名/説明（combat/battlers/*.tres）・UI ラベルを日本語に。
+  - フォントは DotGothic16（OFL, assets/gui/font）。会話ウィンドウ・選択肢・エンディング・扉・戦闘ボタンは直接指定、
+    それ以外（バイナリの .theme 経由のもの）は autoload `JapaneseFont`（src/common/japanese_font.gd）が
+    起動時にフォールバックとして追加する。Web ではシステムフォントのフォールバックが効かないため必須。
+- シナリオ完結：森のゴースト（GameEndTrigger, overworld/maps/forest/game_end_trigger.gd）が
+  会話 → 戦闘（test_combat_arena2）→ 勝利後の会話（ghost_victory.dtl）→ エンディング画面、の流れに。
+  負けたら ghost_loss.dtl のあと再戦（必ずクリアできる）。
+- エンディング画面の文言は実験用（「アンケートの画面にお戻りください」）。
+
 ## デモのシナリオ（概要）
 主人公は小さなロボット。森のゴーストに呼ばれている。町では英雄パーティー Gang of Four（monk・thief・warrior・wizard）のサインを欲しがるファンのため、4人からコインを集めて渡し、杖をもらう。家の台座パズル（runner のヒント）を解き、森でゴーストと戦って終了。

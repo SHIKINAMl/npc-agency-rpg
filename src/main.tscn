@@ -30,7 +30,7 @@
 [ext_resource type="Script" uid="uid://drhfq6rmdeuri" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="20_g8d34"]
 [ext_resource type="Script" uid="uid://c0g1jsnegpvtq" path="res://src/field/ui/dialogue_window.gd" id="20_lk3dv"]
 [ext_resource type="Script" uid="uid://d0ptqnbudhkyj" path="res://addons/dialogic/Modules/Character/node_portrait_container.gd" id="21_f53lt"]
-[ext_resource type="FontFile" uid="uid://cfhyd5hmym1s4" path="res://assets/gui/font/Kenney Pixel.ttf" id="21_r13nn"]
+[ext_resource type="FontFile" path="res://assets/gui/font/DotGothic16-Regular.ttf" id="21_r13nn"]
 [ext_resource type="Resource" uid="uid://c5gfpb2ghma5w" path="res://overworld/maps/town/smith.dtl" id="22_dko83"]
 [ext_resource type="Resource" uid="uid://b6cc3gmd8nlty" path="res://overworld/maps/town/thief.dtl" id="22_rd6oa"]
 [ext_resource type="Resource" uid="uid://cu4um6ppwmk03" path="res://overworld/maps/town/monk.dtl" id="24_grnqa"]
@@ -80,6 +80,8 @@
 [ext_resource type="Resource" uid="uid://bwjallq2c71rq" path="res://overworld/maps/opening_cutscene.dtl" id="68_jcriq"]
 [ext_resource type="Script" uid="uid://i6j3l72wljdc" path="res://src/combat/combat.gd" id="69_meyff"]
 [ext_resource type="Script" uid="uid://diexbgvrksk2k" path="res://addons/dialogic/Resources/flex_vector.gd" id="72_mcuvm"]
+[ext_resource type="Resource" path="res://overworld/maps/forest/ghost_victory.dtl" id="73_ghvic"]
+[ext_resource type="Resource" path="res://overworld/maps/forest/ghost_loss.dtl" id="74_ghlos"]
 
 [sub_resource type="Animation" id="Animation_y8463"]
 length = 0.001
@@ -308,6 +310,7 @@ _data = {
 }
 
 [sub_resource type="LabelSettings" id="LabelSettings_dkg5i"]
+font = ExtResource("21_r13nn")
 font_size = 128
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_giaot"]
@@ -697,14 +700,17 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="Field/Map/Forest/Gamepieces/Ghost/AnimationPlayer/WinScreen/ColorRect/VBoxContainer/VBoxContainer" unique_id=1193689192]
 layout_mode = 2
-text = "THANK YOU FOR PLAYING!"
+text = "ゲームクリア！"
+horizontal_alignment = 1
 label_settings = SubResource("LabelSettings_dkg5i")
 
 [node name="Label2" type="Label" parent="Field/Map/Forest/Gamepieces/Ghost/AnimationPlayer/WinScreen/ColorRect/VBoxContainer/VBoxContainer" unique_id=1944146391]
-custom_minimum_size = Vector2(800, 0)
+custom_minimum_size = Vector2(1400, 0)
 layout_mode = 2
-text = "Find more info or ways to help out at
-github.com/gdquest-demos/godot-open-rpg!"
+theme_override_fonts/font = ExtResource("21_r13nn")
+theme_override_font_sizes/font_size = 48
+text = "最後まで遊んでいただき、ありがとうございました。
+このタブを閉じて、アンケートの画面にお戻りください。"
 horizontal_alignment = 1
 autowrap_mode = 3
 
@@ -719,6 +725,9 @@ item_type = 5
 position = Vector2(888, 472)
 script = ExtResource("40_lduow")
 timeline = ExtResource("37_uncgg")
+victory_timeline = ExtResource("73_ghvic")
+loss_timeline = ExtResource("74_ghlos")
+combat_arena = ExtResource("35_x5y1m")
 ghost_animation_player = NodePath("../Ghost/AnimationPlayer")
 
 [node name="Area2D2" type="Area2D" parent="Field/Map/Forest/Gamepieces/GameEndTrigger" unique_id=1816532642]
@@ -867,7 +876,7 @@ theme_override_constants/margin_bottom = 32
 clip_contents = false
 layout_mode = 2
 theme_override_fonts/normal_font = ExtResource("21_r13nn")
-theme_override_font_sizes/normal_font_size = 96
+theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 fit_content = true
 scroll_active = false
@@ -899,7 +908,7 @@ layout_mode = 2
 theme_override_colors/font_outline_color = Color(0.14902, 0.168627, 0.266667, 1)
 theme_override_constants/outline_size = 24
 theme_override_fonts/font = ExtResource("21_r13nn")
-theme_override_font_sizes/font_size = 96
+theme_override_font_sizes/font_size = 64
 text = "Character Name"
 vertical_alignment = 1
 script = ExtResource("19_lpxfg")
@@ -916,24 +925,32 @@ alignment = 2
 
 [node name="Choice1" type="Button" parent="UI/DialogueLayout/BoxMargins/Choices" unique_id=1099276451]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("21_r13nn")
+theme_override_font_sizes/font_size = 64
 text = "Choice1"
 script = ExtResource("53_w1dgf")
 choice_index = 1
 
 [node name="Choice2" type="Button" parent="UI/DialogueLayout/BoxMargins/Choices" unique_id=949814268]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("21_r13nn")
+theme_override_font_sizes/font_size = 64
 text = "Choice2"
 script = ExtResource("53_w1dgf")
 choice_index = 2
 
 [node name="Choice3" type="Button" parent="UI/DialogueLayout/BoxMargins/Choices" unique_id=1419129480]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("21_r13nn")
+theme_override_font_sizes/font_size = 64
 text = "Choice3"
 script = ExtResource("53_w1dgf")
 choice_index = 3
 
 [node name="Choice4" type="Button" parent="UI/DialogueLayout/BoxMargins/Choices" unique_id=304958622]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("21_r13nn")
+theme_override_font_sizes/font_size = 64
 text = "Choice4"
 script = ExtResource("53_w1dgf")
 choice_index = 4

@@ -5,6 +5,11 @@ Author: Zane Little Music
 URL: https://ko-fi.com/s/da7750d2a9 (accessed 2023-12-29)
 License: [CC0](https://creativecommons.org/publicdomain/zero/1.0/) 
 
+DotGothic16 (font)
+Author: Fontworks Inc. / The DotGothic16 Project Authors
+URL: https://github.com/fontworks-fonts/DotGothic16 (accessed 2026-11-08, via Google Fonts)
+License: [SIL Open Font License 1.1](assets/gui/font/DotGothic16-OFL.txt)
+
 Emotes Pack
 Author: Kenney
 URL: https://kenney.nl/assets/emotes-pack (accessed 2023-06-02)

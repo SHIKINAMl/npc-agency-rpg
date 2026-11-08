@@ -1,10 +1,10 @@
-warrior: You may ask, why am I so popular with the ladies?
-warrior: Is it because I'm super edgy? My angelic appearance? My poor social skills?
-warrior: Why, it's my unfathomably large sword, of course!
+warrior: なぜオレがこんなにモテるのか、知りたいだろう？
+warrior: とがった性格のせいか？ 天使のような見た目か？ それとも、人づきあいがヘタなところか？
+warrior: もちろん、このとてつもなくデカい剣のおかげさ！
 if {HasWarriorToken} == 0:
-	warrior: Of course you would want [i]my[/i] autograph!
-	warrior: Here's the awkward part, I can't write. Really.
-	warrior: Have this coin instead. If you squint real hard, you can pretend it has my face on it! Aren't I generous?
+	warrior: もちろん[i]オレの[/i]サインが欲しいよな！
+	warrior: ここからが気まずいんだが……オレは字が書けないんだ。マジで。
+	warrior: かわりにこのコインをやろう。目を細めてよーく見れば、オレの顔が彫ってあるように見えるかもな！ 気前がいいだろう？
 	[signal arg="coin_received"]
 	set {HasWarriorToken} = 1
 	set {TokenCount} += 1
