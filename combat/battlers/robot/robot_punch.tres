@@ -5,8 +5,8 @@
 
 [resource]
 script = ExtResource("2_script")
-hit_chance = 90.0
-base_damage = 50
+hit_chance = 95.0
+base_damage = 60
 icon = ExtResource("1_icon")
 name = "パンチ"
 description = "敵1体をなぐる。いちばん基本の攻撃。"

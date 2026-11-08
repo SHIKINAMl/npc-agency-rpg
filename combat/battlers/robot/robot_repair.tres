@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("2_script")
-heal_amount = 60
+heal_amount = 100
 icon = ExtResource("1_icon")
 name = "修理"
 description = "自分を修理して、HPを回復する。"

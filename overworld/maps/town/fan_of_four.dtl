@@ -9,7 +9,7 @@ elif {TokenQuestStatus} < 3:
 		fan_of_four: えっ、4人からもらってきてくれたの！？ ……サインじゃなくてコイン？
 		fan_of_four: ……でも、英雄からのプレゼントには変わりないよね！ 人生で最高の日だ！！！
 		fan_of_four: 約束のお礼に、この[color=cyan]青い杖[/color]をあげる。マチルダおばあさんの家から[b]借りてきた[/b]ものなんだけど……。
-		fan_of_four: おばあさんの家の台座に、杖を置くとなにか起きるらしいよ！
+		fan_of_four: おばあさんの家には、[color=orange]3本の杖[/color]を台座に置くと開く、ひみつの通り道があるんだって！
 		[signal arg="GiveWand"]
 		set {TokenQuestStatus} = 3
 	else:
@@ -18,5 +18,5 @@ elif {TokenQuestStatus} < 3:
 		# Bump the quest status up by one so that the interaction knows that this is not the first encounter witht the NPC.
 		set {TokenQuestStatus} = 2
 else:
-	fan_of_four: 本当にありがとう！ おばあさんの家の台座、ためしてみてね！
+	fan_of_four: 本当にありがとう！ 杖は3本そろえて、おばあさんの家の台座に置くんだよ！
 [end_timeline]

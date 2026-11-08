@@ -5,9 +5,9 @@
 [resource]
 script = ExtResource("1_stats")
 affinity = 0
-base_max_health = 150
+base_max_health = 250
 base_max_energy = 6
-base_attack = 10
+base_attack = 15
 base_defense = 10
 base_speed = 55
 base_hit_chance = 100
