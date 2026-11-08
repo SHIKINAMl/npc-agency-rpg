@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="StatsBattlerAction" load_steps=3 format=3]
+
+[ext_resource type="Texture2D" uid="uid://cch8ku256ts3y" path="res://combat/battlers/bear/icon_raise.svg" id="1_icon"]
+[ext_resource type="Script" uid="uid://lq2mfixji1w5" path="res://src/combat/actions/battler_action_modify_stats.gd" id="2_script"]
+
+[resource]
+script = ExtResource("2_script")
+icon = ExtResource("1_icon")
+name = "集中"
+description = "攻撃力と命中率を上げる。すぐに次の番が来る。"
+target_scope = 0
+targets_friendlies = true
+readiness_saved = 50.0

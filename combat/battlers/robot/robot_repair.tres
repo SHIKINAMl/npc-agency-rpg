@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="HealBattlerAction" load_steps=3 format=3]
+
+[ext_resource type="Texture2D" uid="uid://colusv412eplq" path="res://combat/battlers/squirrel/icon_first_aid.svg" id="1_icon"]
+[ext_resource type="Script" uid="uid://d2chwgobkstjb" path="res://src/combat/actions/battler_action_heal.gd" id="2_script"]
+
+[resource]
+script = ExtResource("2_script")
+heal_amount = 60
+icon = ExtResource("1_icon")
+name = "修理"
+description = "自分を修理して、HPを回復する。"
+target_scope = 0
+targets_friendlies = true

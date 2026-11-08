@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_bbarm")
-base_damage = 999
+base_damage = 25
 label = "Area Attack"
 description = "A sweeping attack, hitting all enemy Battlers"
 target_scope = 2
