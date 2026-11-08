@@ -1,5 +1,5 @@
 台座に杖が置かれている。
 - 杖を取る
 	[signal arg="empty"]
-- 何もしない
+- そのままにする
 [end_timeline]

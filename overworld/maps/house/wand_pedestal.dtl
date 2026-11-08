@@ -1,9 +1,9 @@
-台座には何も置かれていない。
+杖を置けそうな台座がある。今は何も置かれていない。
 - 赤い杖を置く [if {RedWandCount} > 0][else="hide"]
 	[signal arg="RED_WAND"]
 - 青い杖を置く [if {BlueWandCount} > 0][else="hide"]
 	[signal arg="BLUE_WAND"]
 - 緑の杖を置く [if {GreenWandCount} > 0][else="hide"]
 	[signal arg="GREEN_WAND"]
-- 何もしない
+- やめておく
 [end_timeline]

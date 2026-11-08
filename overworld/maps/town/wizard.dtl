@@ -1,8 +1,7 @@
-wizard: ファス・ロー・ドー！
-wizard: …[pause=0.5]…[pause=0.5]…[pause=0.5]いや待て、ちがうな。
+wizard: ファス・ロー・ドー！ ……[pause=0.5]いや、ちがうな。呪文を思い出せん。
 if {HasWizardToken} == 0:
-	wizard: わしのサインじゃと？ ふん、ちっぽけなブリキ人形にかまっている暇はないわい。
-	wizard: ほれ、このわずかな施しをくれてやるから、とっとと去れ。
+	wizard: サインじゃと？ ふん、ブリキ人形の相手をしている暇はないわい。
+	wizard: ほれ、このコインをやるから、ファンの小僧に渡してさっさと行け。
 	[signal arg="coin_received"]
 	set {HasWizardToken} = 1
 	set {TokenCount} += 1

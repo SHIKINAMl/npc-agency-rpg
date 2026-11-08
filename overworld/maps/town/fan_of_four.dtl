@@ -1,20 +1,22 @@
 if {TokenQuestStatus} == 0:
-	fan_of_four: 来てる！ [speed=3.5][color=orange][wave]ギャング・オブ・フォー[/wave][/color]が[speed=1.0]来てるんだ！ 最高だよ！！！
-	fan_of_four: めちゃくちゃカッコいいんだ！ 好きなときに[color=orange][wave]タイムトラベル[/wave][/color]できるし、この宇宙を[color=orange][wave]6回[/wave][/color]も救ってるんだ！ [color=red]ワルダー・アクヤック[/color]も、[color=red]戦車のフランク[/color]も、[color=red]スティーブ[/color]も、[color=orange][wave]先週の金曜日[/wave][/color]にやっつけたんだよ！
-	fan_of_four: サインのためなら[color=orange][wave]なんだって[/wave][/color]差し出すのに、緊張しすぎて話しかけられないよ！ うわあああ！！！
+	fan_of_four: ねえねえ、知ってる！？ あの[color=orange][wave]ギャング・オブ・フォー[/wave][/color]が、この町に来てるんだ！
+	fan_of_four: 宇宙を[color=orange]6回[/color]も救った英雄パーティーなんだよ！ 武道家、盗賊、戦士、魔法使いの4人組さ！
+	fan_of_four: 4人のサインがほしいんだけど、緊張しちゃって話しかけられないんだ……。
+	fan_of_four: ねえ、ロボットくん！ ぼくのかわりに、[color=orange]4人全員[/color]からサインをもらってきてくれない？ お礼はちゃんとするからさ！
 	set {TokenQuestStatus} = 1
 elif {TokenQuestStatus} < 3:
 	if {TokenCount} >= 4:
-		fan_of_four: これを、ぼくに……？
-		fan_of_four: ……
-		fan_of_four: 人生で最高の日だ！！！
-		fan_of_four: どうお礼をしたらいいんだろう？ そうだ、この杖をあげるよ。あのヘンなおばあさんから[b]借りてきた[/b]やつなんだ。
+		fan_of_four: えっ、4人からもらってきてくれたの！？ ……サインじゃなくてコイン？
+		fan_of_four: ……でも、英雄からのプレゼントには変わりないよね！ 人生で最高の日だ！！！
+		fan_of_four: 約束のお礼に、この[color=cyan]青い杖[/color]をあげる。マチルダおばあさんの家から[b]借りてきた[/b]ものなんだけど……。
+		fan_of_four: おばあさんの家の台座に、杖を置くとなにか起きるらしいよ！
 		[signal arg="GiveWand"]
 		set {TokenQuestStatus} = 3
 	else:
-		fan_of_four: こ、興奮してる？ ぼくが？ なんでそう思うのさ？
+		fan_of_four: 4人からサインはもらえた？ 今は{TokenCount}人分だね。
+		fan_of_four: 武道家、盗賊、戦士、魔法使い、[color=orange]4人全員[/color]に話しかけてみて！
 		# Bump the quest status up by one so that the interaction knows that this is not the first encounter witht the NPC.
 		set {TokenQuestStatus} = 2
 else:
-	fan_of_four: 人生で最高の日だ！！！
+	fan_of_four: 本当にありがとう！ おばあさんの家の台座、ためしてみてね！
 [end_timeline]

@@ -1,9 +1,9 @@
 if {Hint} == 0:
-	runner (Default): きみのママも「立ち止まって、よーく見なさい」って言う？
-	runner (Default): [i]ぼくの[/i]ママなんて「あなたは二度見しないと何にも気づかないんだから」っていつも言うんだ！
+	runner (Default): ぼくのママがいつも言うんだ。「気になるものは、[color=orange]二回[/color]調べてみなさい」って！
+	runner (Default): 町のはしっこにある、じゃまな木とかもね！
 	set {Hint} = 1
 else:
-	runner: あのヘンなおばあさん、なんて言ってたっけ？
-	runner: 「緑、青、赤」だったかな？
+	runner: そういえば、マチルダおばあさんがぶつぶつ言ってたよ。
+	runner: 「台座の杖は、左から[color=green]緑[/color]、[color=cyan]青[/color]、[color=red]赤[/color]……」だってさ！
 	set {Hint} = 0
 [end_timeline]

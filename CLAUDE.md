@@ -34,6 +34,8 @@ GDQuest の Godot Open RPG（MIT, upstream: https://github.com/gdquest-demos/god
 - シナリオ完結：森のゴースト（GameEndTrigger, overworld/maps/forest/game_end_trigger.gd）が
   会話 → 戦闘（test_combat_arena2）→ 勝利後の会話（ghost_victory.dtl）→ エンディング画面、の流れに。
   負けたら ghost_loss.dtl のあと再戦（必ずクリアできる）。
+- 台詞：直訳をやめ、目的が分かるように書き直し（ファンが「4人からサインを」と明確に依頼、進捗 {TokenCount} を表示、
+  ヒント役の台詞で木・カギ・台座の順番を示す）。英雄の表示名に職業を付けた（武道家ウィッジ など）。
 - 戦闘の味方：クマ・リスをやめ、主人公のロボット1人に（combat/battlers/robot：フィールドのドット絵を拡大した見た目、
   技はパンチ／集中／修理）。1人で勝てるよう敵を調整（bugcat の命中率 0→100・攻撃 30→10、wolf の全体攻撃 999→25）。
 - エンディング画面の文言は実験用（「アンケートの画面にお戻りください」）。
