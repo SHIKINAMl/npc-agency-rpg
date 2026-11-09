@@ -35,3 +35,7 @@ func _execute() -> void:
 		Dialogic.start_timeline(loss_timeline)
 	
 	await Dialogic.timeline_ended
+	
+	# [npc-agency-rpg] Once defeated, the encounter (its whole gamepiece) leaves the map.
+	if did_player_win:
+		get_parent().queue_free()
