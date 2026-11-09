@@ -39,6 +39,8 @@ GDQuest の Godot Open RPG（MIT, upstream: https://github.com/gdquest-demos/god
   子ども＝「二回見ないと気づかない」（木）／マチルダが「みどり、あお、あか」とつぶやいていた（台座の順番）、
   鍛冶屋＝マチルダは家の中から森の奥へ行っているというウワサ、武道家＝町の南から森に入っても奥は行き止まり、
   町の上の騎士ゴースト（ConversationEncounter）＝倒すと「杖は3本：家の宝箱・森の中・誰かが持ち出した」と教える。
+- 森の入口（町の南）の敵 RoamingEncounter に会話を追加：戦闘前・勝利後・敗北後（gate_ghost_*.dtl、キャラ gate_ghost.dch
+  「森の番人ゴースト」）。roaming_combat_trigger.gd に任意のタイムライン export を追加。勝利後に「この道は森の奥まで続かない」と言う。
 - 戦闘の味方：クマ・リスをやめ、主人公のロボット1人に（combat/battlers/robot：フィールドのドット絵を拡大した見た目、
   技はパンチ／集中／修理、HP250・攻撃15）。1人で勝てるよう敵を調整（bugcat の命中率 0→100・攻撃 30→10、wolf の全体攻撃 999→25）。
 - Web 公開：export_presets.cfg（Web, スレッド無し＝GitHub Pages で動く設定）と

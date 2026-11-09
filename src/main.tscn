@@ -82,6 +82,9 @@
 [ext_resource type="Script" uid="uid://diexbgvrksk2k" path="res://addons/dialogic/Resources/flex_vector.gd" id="72_mcuvm"]
 [ext_resource type="Resource" path="res://overworld/maps/forest/ghost_victory.dtl" id="73_ghvic"]
 [ext_resource type="Resource" path="res://overworld/maps/forest/ghost_loss.dtl" id="74_ghlos"]
+[ext_resource type="Resource" path="res://overworld/maps/town/gate_ghost_before_combat.dtl" id="75_ggpre"]
+[ext_resource type="Resource" path="res://overworld/maps/town/gate_ghost_on_victory.dtl" id="76_ggvic"]
+[ext_resource type="Resource" path="res://overworld/maps/town/gate_ghost_on_loss.dtl" id="77_gglos"]
 
 [sub_resource type="Animation" id="Animation_y8463"]
 length = 0.001
@@ -482,6 +485,9 @@ metadata/_edit_lock_ = true
 position = Vector2(200, 264)
 script = ExtResource("33_0gswb")
 combat_arena = ExtResource("34_moieg")
+pre_combat_timeline = ExtResource("75_ggpre")
+victory_timeline = ExtResource("76_ggvic")
+loss_timeline = ExtResource("77_gglos")
 metadata/_edit_group_ = true
 
 [node name="InteractionPopup" parent="Field/Map/Town/Gamepieces/RoamingEncounter" unique_id=1596533944 instance=ExtResource("34_qs25x")]

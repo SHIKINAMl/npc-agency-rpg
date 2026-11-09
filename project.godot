@@ -80,6 +80,7 @@ settings/text_speed=1.0
 directories/dch_directory={
 "enemy_ghost": "res://overworld/maps/town/enemy_ghost.dch",
 "fan_of_four": "res://overworld/maps/town/fan_of_four.dch",
+"gate_ghost": "res://overworld/maps/town/gate_ghost.dch",
 "ghost": "res://overworld/maps/forest/ghost.dch",
 "monk": "res://overworld/maps/town/monk.dch",
 "runner": "res://overworld/maps/town/runner.dch",
@@ -93,6 +94,9 @@ directories/dtl_directory={
 "encounter_on_loss": "res://overworld/maps/town/encounter_on_loss.dtl",
 "encounter_on_victory": "res://overworld/maps/town/encounter_on_victory.dtl",
 "fan_of_four": "res://overworld/maps/town/fan_of_four.dtl",
+"gate_ghost_before_combat": "res://overworld/maps/town/gate_ghost_before_combat.dtl",
+"gate_ghost_on_loss": "res://overworld/maps/town/gate_ghost_on_loss.dtl",
+"gate_ghost_on_victory": "res://overworld/maps/town/gate_ghost_on_victory.dtl",
 "ghost": "res://overworld/maps/forest/ghost.dtl",
 "ghost_loss": "res://overworld/maps/forest/ghost_loss.dtl",
 "ghost_victory": "res://overworld/maps/forest/ghost_victory.dtl",
