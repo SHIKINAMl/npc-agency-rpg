@@ -41,7 +41,12 @@ GDQuest の Godot Open RPG（MIT, upstream: https://github.com/gdquest-demos/god
   町の上の騎士ゴースト（ConversationEncounter）＝倒すと「杖は3本：家の宝箱・森の中・誰かが持ち出した」と教える。
 - 戦闘の味方：クマ・リスをやめ、主人公のロボット1人に（combat/battlers/robot：フィールドのドット絵を拡大した見た目、
   技はパンチ／集中／修理、HP250・攻撃15）。1人で勝てるよう敵を調整（bugcat の命中率 0→100・攻撃 30→10、wolf の全体攻撃 999→25）。
+- Web 公開：export_presets.cfg（Web, スレッド無し＝GitHub Pages で動く設定）と
+  .github/workflows/deploy-web.yml（Godot 4.7.2 で書き出し → GitHub Pages）。Pages の Source を「GitHub Actions」にする必要あり。
 - エンディング画面の文言は実験用（「アンケートの画面にお戻りください」）。
 
 ## デモのシナリオ（概要）
 主人公は小さなロボット。森のゴーストに呼ばれている。町では英雄パーティー Gang of Four（monk・thief・warrior・wizard）のサインを欲しがるファンのため、4人からコインを集めて渡し、杖をもらう。家の台座パズル（runner のヒント）を解き、森でゴーストと戦って終了。
+
+## TODO（あとで考える）
+- 戦闘のロボットの絵（ドット絵の拡大）が、手描き風の敵キャラとタッチが合っていない。

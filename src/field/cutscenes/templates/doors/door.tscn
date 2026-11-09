@@ -192,11 +192,11 @@ bus = &"SFX"
 [node name="LockedLabel" type="Label" parent="." index="5"]
 visible = false
 z_index = 101
-offset_left = -17.0
+offset_left = -43.2
 offset_top = -29.0
-offset_right = 158.0
+offset_right = 388.8
 offset_bottom = 72.0
 scale = Vector2(0.2, 0.2)
-text = "カギがない"
+text = "カギがかかっている"
 label_settings = SubResource("LabelSettings_0glfv")
 horizontal_alignment = 1
